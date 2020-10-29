@@ -2,6 +2,9 @@
 #!desc=解除 TikTok 区域限制。
 #!system=ios
 
+[Rule]
+URL-REGEX,^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/?,reject
+
 [URL Rewrite]
 (?<=_region=)CN(?=&) TW 307
 (?<=&app_version=)17..(?=.?.?&) 1 307
