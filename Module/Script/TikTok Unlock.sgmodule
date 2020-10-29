@@ -3,10 +3,9 @@
 #!system=ios
 
 [URL Rewrite]
-(?<=_region=)CN(?=&) url 307 TW
-(?<=&app_version=)1[6-9]..(?=.?.?&) url 307 17..
-(?<=\?version_code=)1[6-9]..(?=.?.?&) url 307 17..
-^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/? url reject
+(?<=_region=)CN(?=&) TW 307
+(?<=&app_version=)17..(?=.?.?&) 1 307
+(?<=\?version_code=)17..(?=.?.?&) 1 307
 
 [MITM]
 hostname = %INSERT% *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
