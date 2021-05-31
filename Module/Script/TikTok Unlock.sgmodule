@@ -7,8 +7,8 @@ URL-REGEX,^https://api[\w-]*?.tiktokv.com/aweme/v\d/policy/notice/?,reject
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) TW 307
-(?<=&app_version=)17..(?=.?.?&) 1 307
-(?<=\?version_code=)17..(?=.?.?&) 1 307
+(?<=&app_version=)19..(?=.?.?&) 1 307
+(?<=\?version_code=)19..(?=.?.?&) 1 307
 
 [MITM]
 hostname = %INSERT% *.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
